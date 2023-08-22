@@ -1,0 +1,19 @@
+5.예약어>>
+자바 프로그래밍 언어에서 예약어는 특별한 목적으로 이미 사용되고 있기 때문에 변수명이나 함수명 등으로 미리 정의되어 사용될 수 없는 단어,  
+
+EX)
+:abstract
+assert
+boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+default
+do
+
+자바는 모든 표현식과 변수 등의 형식을 컴파일러에 알려야 하는 자료 형식에 엄격한 언어이기 때문에 

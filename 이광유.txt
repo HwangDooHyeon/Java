@@ -1,0 +1,69 @@
+1.main : 자바로 작성한 소스코드 에서 가장먼저 실행되는 메서드
+* public class MainExample {
+    public static void main(String[] args) {
+        // 프로그램의 시작점
+        // 이곳에서 코드 실행이 시작됨
+    }
+}
+
+2.주석: 프로그래밍에 있어 내용을 메모하는 목적으로 쓰이는것 --> //
+
+
+
+
+3.변수: 변수란 프로그래밍에서 데이터를 저장하고 관리하기 위한 개념,  각각 정수, 문자열, 실수 값을 담고 있고 이름을 부여하고 한가지의 정보만 저장할 수 있다.
+(ex) : num1: 사과   <---- 배    ====> num1: 배 ) 나중에 부여된 변수 선언을 기억하게 됨
+
+@ 변수 선언이란 
+: 변수를 사용하기 위해 변수에 어떤 데이터를 담을지 명시하는 작업
+
+
+데이터 타입                    변수명
+int                           number = 10;               => 정수형
+long                         long 1=100L or I;
+
+
+double                     d1=1.2d or D;  
+float                        f = 1.3f or F                    => 실수형
+
+
+char                           c1='a' or  '\uac00'; '\u' 다음에 유니코드 값을 입력  => 문자형
+  
+
+boolean stop= true;     => 논리형
+                     false;
+
+String var1 = "홍길동";   ==> 문자열타입
+
+
+
+4.lvalue & rvalue
+: 사전적 의미는 왼쪽값 오른쪽값
+보통 rvalue는 일반적으로 lvalue에 할당되거나 사용되는 값 (lvalue: 이름을 지닌 변수
+                                                                                 rvalur: 표현이후 사라지는 값 = 임시변수)
+ ***      lvaue        rvalue
+           int x    =   3
+
+
+
+
+예약어>>
+자바 프로그래밍 언어에서 예약어는 특별한 목적으로 이미 사용되고 있기 때문에 변수명이나 함수명 등으로 사용될 수 없는 단어,  이러한 예약어들은 언어 자체의 구문과 의미를 정의하는 역할을함
+:abstract
+assert
+boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+default
+do
+
+코드블록>>
+한 덩어리로 묶인 코드의 세트
+
+- 가독성,유지보수 우수

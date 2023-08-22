@@ -76,5 +76,7 @@ public class test2 {
     // ** 연산자 우선순위 **
         // https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F997A014D5A90B9B00D
             // 1번과 14번이 제일 중요
+
+
     }
 }

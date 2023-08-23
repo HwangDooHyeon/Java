@@ -4,18 +4,20 @@ public class Main
     {
 
     // *** switch문 ***
-        // case 다음에는 반드시 break; 작성하기.
-        // break;가 없으면 다음 case까지 실행한다.
-        // case 1, 3, 4, 2가 있고, break가 없을 때, value가 4라면 case 1, 3은 지나가고 case 4, 2가 실행되고 switch문이 종료된다.
-        // 해당 value값이 없다면 switch문이 종료된다.
-        // 동일한 case가 존재할 경우 오류 발생
-        // default: if-else문의 else에 해당
+        /*
+        case 다음에는 반드시 break; 작성하기.
+        break;가 없으면 다음 case까지 실행한다.
+        case 1, 3, 4, 2가 있고, break가 없을 때, value가 4라면 case 1, 3은 지나가고 case 4, 2가 실행되고 switch문이 종료된다.
+        해당 value값이 없다면 switch문이 종료된다.
+        동일한 case가 존재할 경우 오류 발생
+        default: if-else문의 else에 해당
+        */
 
-        int value1 = 4;
+        int value1 = 1;
             // System.out.println(value + "월입니다");
             // swhitch문 없이 출력되게 하려면 위처럼 쓰면 된다.
 
-        switch (value1)
+        switch (value1) // value1의 값에 따른 "N월입니다" 출력
         {
             case 1:
                 System.out.println("1월입니다");
@@ -58,9 +60,140 @@ public class Main
                 break;
         }
 
+
+        // switch문을 사용한 분류 - 서점의 책 종류 = {판타지 = (로맨스, SF), 부동산 = (경매, 중개)}
+
+        int value2 = 0;
+        int value3 = 0;
+
+        switch (value2) // value2, value3의 값에 따른 도서 분류 출력
+        {
+            case 0:
+                switch (value3)
+                {
+                    case 0:
+                        System.out.println("로맨스");
+                        break;
+                    case 1:
+                        System.out.println("SF");
+                        break;
+                }
+                break;
+            case 1:
+                switch (value3)
+                {
+                    case 0:
+                        System.out.println("경매");
+                        break;
+                    case 1:
+                        System.out.println("중개");
+                        break;
+                }
+                break;
+        }
+
+        // 변수 하나만 써서 도서 구분하기
+        /*int value4 = 1;
+
+        final int 판타지 = 0;
+        final int 부동산 = 1;
+
+         if (value4 + 판타지 == 00 )
+        {
+            System.out.println("경매2");
+        }
+
+        if ((value4 & 판타지) == 0)
+        {
+            System.out.println("판타지1");
+        }
+        if ((value4 & 판타지) == 1)
+        {
+            System.out.println("판타지2");
+        }
+        if ((value4 & 부동산) == 0)
+        {
+            System.out.println("부동산1");
+        }
+        if ((value4 & 부동산) == 1)
+        {
+            System.out.println("부동산2");
+        }
+
+        switch (value4)
+        {
+            case 0:
+                switch (value4)
+                {
+                    case 0:
+                        System.out.println("로맨스");
+                        break;
+                    case 1:
+                        System.out.println("SF");
+                        break;
+                }
+                break;
+            case 1:
+                switch (value4)
+                {
+                    case 0:
+                        System.out.println("경매");
+                        break;
+                    case 1:
+                        System.out.println("중개");
+                        break;
+                }
+                break;
+        }*/
+
+
+    // *** 데이터 타입 ***
+        /*
+        정수형 타입
+            short : 2 byte
+            int : 4 byte
+            long : 8 byte
+        실수형 타입
+            float : 4 byte
+            double : 8 byte
+        문자형 타입
+            char : 2 byte (java는 유니코드를 기본으로 채택하고 있기 때문에 2 byte)
+        */
+
+    // *** 변수 선언 ***
+        /*
+        int number; <- 변수 선언
+        number = 0; <- 변수 초기화
+        int number = 10 <- 변수 선언과 동시에 초기화
+        */
+
+    // *** for문 ***
+        /*
+        횟수가 있는 반복문
+        초기문, 조건문, 증감문
+        for(초기문 ; 조건문 ; 증감문(단항연산자(++, --)))
+        */
+
+        for(int i = 0 ; i < 10 ; ++i) // i의 값에 따른 Hello World 횟수 N만큼 반복 출력
+        {
+            System.out.println(i + 1 + " Hello World");
+        }
+
+    // *** while문 ***
+        /*
+        정해진 횟수가 없는 무한 반복문
+        무한 반복문일지라도 아래처럼 작성하면 횟수를 정할 수 있다.
+            while(조건문)
+                초기문, 조건문, 증감문
+        */
+
+        int i = 0;
+        while (i < 10)
+        {
+            ++i;
+        }
+
         
-
-
 
     }
 }

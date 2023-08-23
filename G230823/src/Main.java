@@ -60,7 +60,6 @@ public class Main
                 break;
         }
 
-
         // switch문을 사용한 분류 - 서점의 책 종류 = {판타지 = (로맨스, SF), 부동산 = (경매, 중개)}
 
         int value2 = 0;
@@ -92,7 +91,7 @@ public class Main
                 break;
         }
 
-        // 변수 하나만 써서 도서 구분하기
+        // 변수 하나만 써서 도서 구분하기 (미완성)
         /*int value4 = 1;
 
         final int 판타지 = 0;
@@ -147,6 +146,7 @@ public class Main
         }*/
 
 
+
     // *** 데이터 타입 ***
         /*
         정수형 타입
@@ -160,12 +160,16 @@ public class Main
             char : 2 byte (java는 유니코드를 기본으로 채택하고 있기 때문에 2 byte)
         */
 
+
+
     // *** 변수 선언 ***
         /*
         int number; <- 변수 선언
         number = 0; <- 변수 초기화
         int number = 10 <- 변수 선언과 동시에 초기화
         */
+
+
 
     // *** for문 ***
         /*
@@ -174,10 +178,21 @@ public class Main
         for(초기문 ; 조건문 ; 증감문(단항연산자(++, --)))
         */
 
-        for(int i = 0 ; i < 10 ; ++i) // i의 값에 따른 Hello World 횟수 N만큼 반복 출력
+        for (int i = 0 ; i < 10 ; ++i) // i의 값에 따른 Hello for 횟수 N만큼 반복 출력
         {
-            System.out.println(i + 1 + " Hello World");
+            System.out.println(i + 1 + " Hello For");
         }
+
+        for (int j = 2 ; j <= 9 ; j += 2) // 구구단 출력
+        {
+            System.out.println("*** " + j + " 단 ***");
+                        for(int k = 1 ; k <= 9 ; ++k)
+            {
+                System.out.println(j + " * " + k + " = " + (j*k));
+            }
+        }
+
+
 
     // *** while문 ***
         /*
@@ -188,12 +203,36 @@ public class Main
         */
 
         int i = 0;
-        while (i < 10)
+        while (i < 10) // i의 값에 따른 Hello while 횟수 N만큼 반복 출력
         {
             ++i;
+            System.out.println(i + " Hello while");
         }
 
-        
+        // 1626년도 인디언이 멘헤튼 섬을 24달러에 판매. 24달러를 은행에 입금. 매년 3%복리 했을 때, 현재 얼마인가?
+        int year = 1626;
+        double money = 24;
+        while (year < 2023)
+        {
+            ++year;
+            money *= 1.03;
+        }
+        System.out.println(money);
+
+
+
+    // if-else문과 switch문의 차이
+    // 기계어란 무엇인가?
+    // 프로그래밍 언어의 종류
+    // 컴파일러란 무엇인가요?
+    // 자바 가상 머신 (JVM)이란?
+    // 컴파일이란 무엇인가요?
+    // 인터프리터 언어란 무엇인가요?
+    // 인터프리터와 컴파일러의 차이는?
+    // JDK란?
+    // 환경변수란?
+
+
 
     }
 }

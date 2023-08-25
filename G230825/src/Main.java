@@ -1,7 +1,8 @@
-import java.util.Scanner;
 public class Main {
 
-    // 함수 (아래의 main도 함수이기 때문에 main의 영역 밖에서 작성해야한다.)
+    // 함수
+    /*
+    // (아래의 main도 함수이기 때문에 main의 영역 밖에서 작성해야한다.)
     // return 값은 public 뒤의 데이터 타입으로 정해진다.
     public int function()
     {
@@ -12,10 +13,10 @@ public class Main {
     {
         return name;
     }
-
-
+    */
 
     public static void main(String[] args) {
+
 
         // 230824 복습
         /*
@@ -76,6 +77,27 @@ public class Main {
         */
 
 
+        // Class
+        /*
+        // 클래스는 데이터와 기능이 한 데 묶여있다. = 캡슐화 되어있다.
+        // 모든 객체는 Class로 만들어진다. / 모든 Class가 객체인 것은 아니다.
+            // ex) 충돌판정 클래스, 거리 측정 클래스, ...
+        // 상속 :
+        // 다형성 : 클래스는 다양한 형태를 가질 수 있음
+            // ex) 배그: 캐릭터 클래스, 총 클래스, 자동차 클래스, 바람 클래스, ...
+        // 추상성 : 여러 클래스들을 포함하는 개념을 가질 수 있음
+            // ex) 각각의 클래스 : 모니터, 본체, 키보드, ... -> 컴퓨터: 각 클래스들을 포함하는 개념
+        // is a 관계? :
+        // has a 관계? :
+        */
+
+        // 클래스 예제
+
+        User user = new User();
+        /*user.Initialize("홍길동");
+        user.Update();
+        user.Output();*/
+        user.getName();
 
 
 

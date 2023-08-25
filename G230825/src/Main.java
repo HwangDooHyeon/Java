@@ -94,12 +94,10 @@ public class Main {
         // 클래스 예제
 
         User user = new User();
-        /*user.Initialize("홍길동");
-        user.Update();
-        user.Output();*/
+        user.Initialize("홍길동");
         user.getName();
-
-
+        user.Update();
+        //user.Output();
 
 
 

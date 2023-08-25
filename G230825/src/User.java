@@ -1,22 +1,22 @@
 import java.util.Scanner;
+
+
 public class User {
 
 
     private String name;
 
 
+    public void Initialize(String name) {
+        this.name= getName();
+    }
+
+
     public String getName() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("이름을 입력해주세요: ");
         String name = scanner.nextLine();
-        scanner.close();
-        System.out.println("입력하신 이름은 " + name + "입니다.");
         return name;
-    }
-
-
-    public void Initialize(String name) {
-        this.name/*private String name;의 name을 뜻함.*/ = name;/*public void Initialize(String name)의 name을 뜻함.*/
     }
 
 
@@ -25,10 +25,13 @@ public class User {
     }
 
 
-    public void Output() {
-        System.out.println("Hello World!!");
-    }
+
+
+
 }
+
+
+
 /*
 // Scanner 객체 생성
 Scanner scanner = new Scanner(System.in);
@@ -44,4 +47,34 @@ System.out.println("입력하신 이름은 " + name + "입니다.");
 
 // Scanner 객체 닫기
 scanner.close();
+
+
+import java.util.Scanner;
+
+public class User {
+
+     private  String name;
+
+    private String getName()
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("이름을 입력해");
+        String name = scanner.nextLine();
+
+
+        return name;
+    }
+
+    public  void initialize()
+     {
+         this.name = getName();
+     }
+
+    public  void Update()
+    {
+        System.out.println(name);
+    }
+}
+
 */

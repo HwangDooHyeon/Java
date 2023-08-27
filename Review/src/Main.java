@@ -1,8 +1,10 @@
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
+
+        /*
         int num1 = -20;
         int num2 = -20;
 
@@ -17,5 +19,20 @@ public class Main {
                 System.out.println("음수");
             }
         }
+        */
+
+
+
+
+
+                Scanner sc = new Scanner(System.in);
+                String str = sc.next();
+                int n = sc.nextInt();
+
+                for (int i = 1 ; (i <= 5) ; ++i) {
+                    System.out.println(str);
+                }
+
+
     }
 }

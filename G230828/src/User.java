@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class User {
 
-    // 필드 (클래스에서 변수는 대체로 private, 함수(메서드)는 대체로 public으로 작성한다.)
+
+    // 필드 (클래스에서 변수는 대체로 private, 함수는 대체로 public으로 작성한다.)
     private String name;
     private String password;
     private int age;

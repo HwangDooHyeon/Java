@@ -10,19 +10,24 @@ public class User {
 
 
     public User () {
-        this.name = "홍길동";
-        this.password = "1q2w3e4r!";
-        this.age = 12;
+        this.name = "";
+        this.password = "";
+        this.age = 0;
     }
 
+    User
 
+
+    /*
     public User (String name, String password, int age) {
         this.name = name;
         this.password = password;
         this.age = age;
     }
+    */
 
 
+    /*
     // get: 데이터를 참조하기 위해 사용함
     public String getName() { return name; }
     public String getPassword() { return password; }
@@ -31,7 +36,7 @@ public class User {
     // set: 데이터를 어떤 값으로 변경하기 위해 사용함
     public void SetName(String Name) { this.name = name; }
     public void SetPassword(String password) { this.password = password; }
-
+    */
 
 
 

@@ -135,7 +135,6 @@ public class Main {
 
         // 점수를 입력받아 학점을 출력해 보세요.
         /*
-        */
 
         Scanner scanner = new Scanner(System.in);
 
@@ -143,7 +142,22 @@ public class Main {
 
         int score = scanner.nextInt();
 
-        
+        if (score > 90) {
+            System.out.print("A");
+        } else if (score > 70) {
+            System.out.print("B");
+        } else if ( score > 50) {
+            System.out.print("c");
+        } else if ( score > 30) {
+            System.out.print("D");
+        } else {
+            System.out.print("F");
+        }
+
+        scanner.close();
+
+        */
+
 
 
 

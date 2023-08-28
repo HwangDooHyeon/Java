@@ -159,6 +159,89 @@ public class Main {
         */
 
 
+        // 현재 시간을 받아 오전인지 오후인지 판별해 보세요.
+        /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("현재 시간을 입력하세요(24시간 형식): ");
+
+        int hour = scanner.nextInt();
+
+        if (hour < 12) {
+            System.out.print("오전");
+        } else if ( hour < 23 ){
+            System.out.print("오후");
+        } else if ( hour == 24 ){
+            System.out.print("오전");
+        } else {
+            System.out.print("시간을 다시 입력해주세요.");
+        }
+
+        scanner.close();
+
+        */
+
+
+        // 요일 번호를 입력받아 요일 이름을 출력해 보세요.
+        /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("요일 번호를 입력하세요(1-7): ");
+
+        int day = scanner.nextInt();
+
+        switch (day) {
+            case 1:
+                System.out.print("월");
+                break;
+
+            case 2:
+                System.out.print("화");
+                break;
+
+            case 3:
+                System.out.print("수");
+                break;
+
+            case 4:
+                System.out.print("목");
+                break;
+
+            case 5:
+                System.out.print("금");
+                break;
+
+            case 6:
+                System.out.print("토");
+                break;
+
+            case 7:
+                System.out.print("일");
+                break;
+        }
+
+        scanner.close();
+
+        */
+
+
+        // '월'을 입력받아 계절을 출력해 보세요.
+        /*
+        */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

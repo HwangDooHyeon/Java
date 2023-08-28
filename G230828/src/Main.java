@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     // 함수
@@ -114,15 +116,32 @@ public class Main {
 
 
         // Class 예제
-            // 변수(name, password, age)를 초기화하고 출력
+            // 변수(name, password, age)를 초기화한 뒤 출력
         /*
         */
-        User user = new User();
 
-        System.out.println(user);
+        // 생성자 호출 및 초기화
+        User user = new User("홍길동", "1q2w3e4r!", 22);
 
+        // 위에서 초기화된 내용을 각각 받아옴
+        String name = user.getName();
+        String password = user.getPassword();
+        int age = user.getAge();
 
+        // 비교 연산 수행 및 값 변경
+        name = "이몽룡";
+        password = "q1w2e3r4@";
+        age = 32;
 
+        // 새로운 값 세팅
+        user.setName(name);
+        user.setPassword(password);
+        user.setAge(age);
+
+        // 새롭게 세팅된 값 출력
+        user.updateName();
+        user.updatePassword();
+        user.updateAge();
 
 
 

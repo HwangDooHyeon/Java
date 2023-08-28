@@ -229,7 +229,151 @@ public class Main {
 
         // '월'을 입력받아 계절을 출력해 보세요.
         /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("'월'을 입력하세요(1-12): ");
+
+        int season = scanner.nextInt();
+
+        switch (season) {
+            case 1:
+                System.out.print(season + "월");
+                break;
+            case 2:
+                System.out.print(season + "월");
+                break;
+            case 3:
+                System.out.print(season + "월");
+                break;
+            case 4:
+                System.out.print(season + "월");
+                break;
+            case 5:
+                System.out.print(season + "월");
+                break;
+            case 6:
+                System.out.print(season + "월");
+                break;
+            case 7:
+                System.out.print(season + "월");
+                break;
+            case 8:
+                System.out.print(season + "월");
+                break;
+            case 9:
+                System.out.print(season + "월");
+                break;
+            case 10:
+                System.out.print(season + "월");
+                break;
+            case 11:
+                System.out.print(season + "월");
+                break;
+            case 12:
+                System.out.print(season + "월");
+                break;
+        }
+
+        scanner.close();
+
         */
+
+
+        // 메뉴 번호를 입력받아 음식 이름을 출력해 보세요.
+        /*
+        // [1. 피자, 2. 파스타, 3. 햄버거, 4. 샐러드, 5. 스테이크, 잘못된 메뉴 번호]
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("메뉴 번호를 입력하세요(1-5): ");
+
+        int menu = scanner.nextInt();
+
+        switch (menu) {
+            case 1:
+                System.out.print("피자");
+                break;
+            case 2:
+                System.out.print("파스타");
+                break;
+            case 3:
+                System.out.print("햄버거");
+                break;
+            case 4:
+                System.out.print("샐러드");
+                break;
+            case 5:
+                System.out.print("스테이크");
+                break;
+            default:
+                System.out.print("잘못된 메뉴 번호");
+                break;
+        }
+
+        scanner.close();
+
+        */
+
+
+        // 성적 등급을 입력받아 평가를 출력해 보세요.
+        /*
+        // [A. 우수, B. 좋음, C. 보통, D. 미흡, F. 불합격, 잘못된 등급]
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("성적 등급을 입력하세요(A-F): ");
+
+        char grade = scanner.next().charAt(0);
+
+        switch (grade) {
+            case 'A':
+                System.out.print("A. 우수");
+                break;
+            case 'B':
+                System.out.print("B. 좋음");
+                break;
+            case 'C':
+                System.out.print("C. 보통");
+                break;
+            case 'D':
+                System.out.print("D. 미흡");
+                break;
+            case 'F':
+                System.out.print("F. 불합격");
+                break;
+            default:
+                System.out.print("잘못된 등급");
+                break;
+        }
+
+        scanner.close();
+
+        */
+
+
+        // 1부터 사용자가 입력한 숫자까지의 합을 구해봐.
+        /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("마지막 값을 입력하세요: ");
+        int sum = 0;
+
+        int count = scanner.nextInt();
+
+        for (int i = 0 ; i < count+1 ; i++) {
+            sum += i;
+        }
+
+        System.out.print(sum);
+
+        scanner.close();
+
+        */
+
+
+
 
 
 

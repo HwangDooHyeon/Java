@@ -10,7 +10,7 @@ public class User {
 
 
     // 생성자
-    public  User() {}
+    public User() {}
     public User(String name, String password, int age) {
         this.name = name;
         this.password = password;

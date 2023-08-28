@@ -129,7 +129,7 @@ public class Main {
         int age = user.getAge();
 
         // 비교 연산 수행 및 값 변경
-        name = "이몽룡";
+        name = "임꺽정";
         password = "q1w2e3r4@";
         age = 32;
 
@@ -193,16 +193,6 @@ public class Main {
 
 
         /* -------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
 
 
     }

@@ -88,7 +88,6 @@ public class Main {
 
         // 세 개의 숫자 중 가장 큰 숫자를 찾아 출력해 보세요.
         /*
-        */
 
         Scanner scanner = new Scanner(System.in);
 
@@ -101,12 +100,51 @@ public class Main {
         System.out.print("세 번째 숫자를 입력하세요: ");
         int num3 = scanner.nextInt();
 
-        if (num1 > num2) {
-            
+        if (num1 > num2 && num1 > num3) {
+            System.out.println("가장 큰 수는 " + num1 + "입니다.");
+        } else if (num2 > num1 && num2 > num3) {
+            System.out.println("가장 큰 수는 " + num2 + "입니다.");
+        } else if (num3 > num1 && num3 > num2) {
+            System.out.println("가장 큰 수는 " + num3 + "입니다.");
         }
 
+        scanner.close();
+
+        */
+
+
+        // 나이를 입력받아 성인인지 미성년자인지 판별해 보세요.
+        /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("나이를 입력하세요: ");
+
+        int age = scanner.nextInt();
+
+        if (age >= 20) {
+            System.out.println("성인입니다.");
+        } else {
+            System.out.println("미성년자입니다.");
+        }
 
         scanner.close();
+
+        */
+
+
+        // 점수를 입력받아 학점을 출력해 보세요.
+        /*
+        */
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("점수를 입력하세요: ");
+
+        int score = scanner.nextInt();
+
+        
+
 
 
 

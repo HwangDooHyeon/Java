@@ -1,3 +1,5 @@
+import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
+
 import java.util.Scanner;
 
 public class Main {
@@ -326,7 +328,7 @@ public class Main {
 
         char grade = scanner.next().charAt(0);
 
-        switch (grade) {
+        switch (Character.toUpperCase(grade)) {
             case 'A':
                 System.out.print("A. 우수");
                 break;
@@ -358,6 +360,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("마지막 값을 입력하세요: ");
+
         int sum = 0;
 
         int count = scanner.nextInt();
@@ -373,7 +376,65 @@ public class Main {
         */
 
 
+        // 2의 거듭제곱을 결과값이 1000을 넘지 않을 때까지 출력해 보세요.
 
+        /*
+        int result = 1;
+
+        for (int i = 0 ; result < 1000 ; ++i) {
+
+            result *= 2;
+
+            if (result < 1000) {
+
+                System.out.println(result);
+
+            }
+        }
+        */
+
+
+        // 입력받은 값으로부터 1까지 거꾸로 출력하는 프로그램을 작성해 보세요.
+        /*
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("마지막 값을 입력하세요: ");
+
+        int count = scanner.nextInt();
+
+        for (int i = 0 ; i < count ; ++i) {
+
+            int countDown = count;
+
+            countDown -= i;
+
+            System.out.println(countDown);
+
+        }
+
+        scanner.close();
+        */
+
+
+
+        // 사용자가 0을 입력할 때까지 숫자를 계속 입력받아 보세요.
+        /*
+        */
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("숫자를 입력하세요 (0을 입력하면 종료): ");
+
+        int number = scanner.nextInt();
+
+        while (number == 0) {
+
+            System.out.print("숫자를 입력하세요 (0을 입력하면 종료): ");
+
+        }
+
+        scanner.close();
 
 
 

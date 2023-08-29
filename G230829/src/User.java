@@ -11,7 +11,11 @@ public class User {
 
 
     // 생성자
-    public User() {}
+    public User() {
+        this.name = ""; //  생략가능
+        this.password = ""; //  생략가능
+        this.age = 0; //  생략가능
+    }
     public User(String name, String password, int age) {
         this.name = name;
         this.password = password;
@@ -51,3 +55,18 @@ public class User {
     }
 
 }
+
+// 230829
+    /*
+    깊은 복사와 얕은 복사에 대해서 알아보기 (어려운 내용이라 교육하진 않음 / 내용만 이해하면 될듯함)
+    public User(String name, String password, int age) //
+    {
+        this.name = user.getName();
+        this.password = user.getPassword;
+        this.age = user.getAge;
+    }
+    */
+
+    /*
+
+    */

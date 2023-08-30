@@ -13,8 +13,23 @@ public class Music {
 
     // getter & setter
 
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle() {
+        this.title = title;
+    }
+    public String getSingger() {
+        return singger;
+    }
+    public  void setSingger() {
+        this.singger = singger;
+    }
 
     // 메서드: 음악을 재생한다
 
+    public void play() {
+        System.out.println(singger + "의 " + title + "을(를) 재생합니다.");
+    }
 
 }

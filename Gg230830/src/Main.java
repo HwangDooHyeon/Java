@@ -67,12 +67,22 @@ public class Main {
 
     // 음악 클래스
         /*
-        */
         // 음악 객체 생성
-        Music.music = new Music("Dynamite", "BTS");
+        Music music = new Music("Dynamite", "BTS");
 
         // 음악을 재생한다
         music.play();
+        */
+
+    //
+
+
+
+
+
+
+
+
 
 
 

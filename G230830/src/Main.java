@@ -154,6 +154,7 @@ public class Main {
 
 
         // 다차원 배열 선언 및 초기화
+        /*
 
         // case 1
 
@@ -172,9 +173,11 @@ public class Main {
                 {30, 40}
         };
 
+        */
 
 
         // 배열 출력
+        /*
 
         int [][] array3 = {
                 {001, 002, 003, 004},
@@ -195,12 +198,46 @@ public class Main {
             }
         }
 
+        */
+
 
         // main에서 main 자신을 호출 (재귀적 호출, 재귀 함수) -
         /*
+
         String[] arg = {};
         main(arg);
+
         */
+
+
+        // 형변환
+        /*
+
+        int sec = 705;
+
+        int min = sec / 60;
+        sec %= 60;
+
+        // int min = (int)(sec / 60); // 형변환 (사진 참조)
+        // sec -= min * 60;
+
+        System.out.println(min + " : " + sec);
+
+        */
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 

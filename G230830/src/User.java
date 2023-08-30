@@ -15,14 +15,27 @@ public class User {
         else
             return;
     } // 조건 없이 생성하면 자기 자신이 계속해서 자기 자신을 불러내기 때문에 스택오버플로우 오류 발생
+    public int[] numbers;
 
+    public int[] getNumbers() { return numbers; }
+    /*
+    public int[] getNumber(int index) {
+        if (index < 0 || numbers.length <= index)
+            return -1;
 
-    // 생성자
+        return numbers[index];
+    }
+    */ // ???
+
+    public void setNumbers(int[] numbers) { this.numbers = numbers; }
+
+    // 생성자 : 매개변수가 들어있지 않음.
     public User() {
         this.name = ""; //  생략가능
         this.password = ""; //  생략가능
         this.age = 0; //  생략가능
     }
+    //복사 생성자 : 매개변수가 한 개 이상 들어있음.
     public User(String name, String password, int age) {
         this.name = name;
         this.password = password;
@@ -60,7 +73,6 @@ public class User {
     public void updateAge() {
         System.out.println(age);
     }
-
 }
 
 // 230829

@@ -1,5 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.ACONST_NULL;
-
 import java.util.Scanner;
 
 public class Main {
@@ -328,8 +326,8 @@ public class Main {
 
         char grade = scanner.next().charAt(0);
 
-        switch (Character.toUpperCase(grade)) {
-            case 'A':
+        switch (grade) { // (Character.toUpperCase(grade))
+            case 'A' : // 'A' | 'a' 도 가능
                 System.out.print("A. 우수");
                 break;
             case 'B':
@@ -419,8 +417,7 @@ public class Main {
 
 
         // 사용자가 0을 입력할 때까지 숫자를 계속 입력받아 보세요.
-        /*
-        */
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -435,6 +432,7 @@ public class Main {
         }
 
         scanner.close();
+
 
 
 

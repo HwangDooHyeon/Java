@@ -8,6 +8,13 @@ public class User {
     private String name;
     private String password;
     private int age;
+    public void  재귀함수(int i) {
+        if (i != 0) {
+            재귀함수(i - 1);
+        }
+        else
+            return;
+    } // 조건 없이 생성하면 자기 자신이 계속해서 자기 자신을 불러내기 때문에 스택오버플로우 오류 발생
 
 
     // 생성자
@@ -67,6 +74,4 @@ public class User {
     }
     */
 
-    /*
 
-    */

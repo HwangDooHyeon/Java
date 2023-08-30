@@ -196,7 +196,11 @@ public class Main {
         }
 
 
-        //
+        // main에서 main 자신을 호출 (재귀적 호출, 재귀 함수) -
+        /*
+        String[] arg = {};
+        main(arg);
+        */
 
 
 

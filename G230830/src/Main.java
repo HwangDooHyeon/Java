@@ -277,10 +277,16 @@ public class Main {
         // 면접 기초 질문으로 자주 나옴 *** Singleton 패턴은 언제 어디서든 편하게 호출하여 데이터를 쉽게 공유하고 리소스를 절약할 수 있기에 자주사용되는 디자인 패턴중 하나입니다. ***
         // -> 데이터를 공유할 수 있어야 함.
 
+        Singleton singleton;
+        S
+
+
         Singleton.getInstance().setNumber(10);
         int number = Singleton.getInstance().getNumber();
 
         System.out.println(number);
+
+
 
 
 

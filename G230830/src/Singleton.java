@@ -1,7 +1,7 @@
 public class Singleton {
     private static Singleton instance = null; // 프로그램이 실행됐을 때(클래스가 로드됐을 때), null 값으로 초기화
 
-    private Singleton() {
+    public Singleton() {
         // private constructor
     }
 
@@ -22,7 +22,7 @@ public class Singleton {
         this.number = number;
     }
 
-    
+
 
 
 

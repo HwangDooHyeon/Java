@@ -5,21 +5,22 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        // scanner.nextInt();
-
         Exercise exercise = new Exercise();
 
-        exercise.outPutExercise();
+        System.out.println("행동을 선택하세요.");
+        System.out.println("1. 밥먹기");
+        System.out.println("2. 잠자기");
+        System.out.println("3. 산책가기");
+        System.out.println("0. 게임종료");
+        System.out.print("입력하세요: ");
 
-        exercise.add(1);
-        exercise.outPutExercise();
+        exercise.add(scanner.nextInt());
+        System.out.print("피로도가 " + 1 + " 증가했습니다.");
+                /*exercise.outPutExercise();
+        System.out.print(" 증가했습니다.");*/
 
 
-        exercise.sub(1);
-        exercise.outPutExercise();
-
-
-
+/*
 
         System.out.print("입력하세요: ");
 
@@ -39,6 +40,6 @@ public class Main {
             default: System.out.print("다시 입력하세요: ");
         }
 
-
+*/
     }
 }

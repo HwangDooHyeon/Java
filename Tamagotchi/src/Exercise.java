@@ -11,7 +11,7 @@ public class Exercise {
 
         public void setExercise(int exercise) { this.exercise = exercise; }
 
-        public void outPutExercise() { System.out.println(exercise); }
+        public void outPutExercise() { System.out.print(exercise); }
 
         public void add(int value) {
                 this.exercise += value;

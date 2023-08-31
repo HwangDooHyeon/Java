@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b6343d-e20d-4cb0-bbdc-f0df0a037c7b" name="Changes" comment="" />
+    <list default="true" id="21b6343d-e20d-4cb0-bbdc-f0df0a037c7b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../G230825/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G230825/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../G230825/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../G230825/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Review/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Review/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tamagotchi/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Tamagotchi/.idea/misc.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

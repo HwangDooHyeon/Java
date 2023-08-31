@@ -134,7 +134,7 @@ public class Main {
 
 
         // 점수를 입력받아 학점을 출력해 보세요.
-        /*
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -156,7 +156,7 @@ public class Main {
 
         scanner.close();
 
-        */
+
 
 
         // 현재 시간을 받아 오전인지 오후인지 판별해 보세요.
@@ -418,7 +418,7 @@ public class Main {
 
         // 사용자가 0을 입력할 때까지 숫자를 계속 입력받아 보세요.
 
-
+        /*
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("숫자를 입력하세요 (0을 입력하면 종료): ");
@@ -432,7 +432,7 @@ public class Main {
         }
 
         scanner.close();
-
+        */
 
 
 

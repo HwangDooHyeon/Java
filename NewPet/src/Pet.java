@@ -5,28 +5,29 @@ public abstract class Pet { // abstract: 추상화
     // abstract 클래스는 private, static, final이 될 수 없다.
     // = abstract 클래스는 객체가 될 수 없기 때문에.
     // abstract 클래스를 상속받은 하위 클래스는 받드시 abstract 메서드를 {구현}해야 한다.
-    //
 
-    Pet() {}
-    Pet(String Name, int Age) {
-        this.Name = Name;
-        this.Age = Age;
-    }
+//    Pet() {}
+//    Pet(String Name, int Age) {
+//        this.Name = Name;
+//        this.Age = Age;
+//    }
+//
+//    protected String Name;
+//    protected int Age;
+//
+//    protected String getName() { return Name; }
+//
+//    protected void setName(String Name) { this.Name = Name; }
+//
+//    protected int getAge() { return Age; }
+//
+//    protected void setAge(int Age) { this.Age = Age; }
 
-    protected String Name;
-    protected int Age;
-
-    protected String getName() { return Name; }
-
-    protected void setName(String Name) { this.Name = Name; }
-
-    protected int getAge() { return Age; }
-
-    protected void setAge(int Age) { this.Age = Age; }
-
-    protected void Walk() {}
-    protected void Eat() {}
-    protected void Sleep() {}
-    protected void Bark() {}
+    protected String sound;
+    public abstract void initialize();
+    protected abstract void Walk();
+    protected abstract void Eat();
+    protected abstract void Sleep();
+    protected abstract void Bark();
 
 }

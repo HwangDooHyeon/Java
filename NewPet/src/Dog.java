@@ -1,12 +1,16 @@
 public class Dog extends Pet {
 
-    public String getName() { return Name; }
+//    public String getName() { return Name; }
+//
+//    public void setName(String Name) { this.Name = Name; }
+//
+//    public int getAge() { return Age; }
+//
+//    public void setAge(int Age) { this.Age = Age; }
 
-    public void setName(String Name) { this.Name = Name; }
-
-    public int getAge() { return Age; }
-
-    public void setAge(int Age) { this.Age = Age; }
+    public void initialize() {
+        sound = "멍멍";
+    }
 
     public void Walk() {System.out.println("산책 킁킁!!");}
     public void Eat() {System.out.println("맛있다 멍멍");}

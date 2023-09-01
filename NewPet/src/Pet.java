@@ -1,4 +1,4 @@
-public abstract class Pet { // abstract: 추상화
+public abstract class Pet implements Animal{ // abstract: 추상화
     // abstract 메서드가 있는 클래스는 반드시 abstract로 선언되어야 한다.
     // Pet pet = new "pet"(); 불가능 -> "자손 클래스 명"으로는 가능
     // abstract 메서드는 선언만 있고, {구현}을 사용할 수 없다.
@@ -25,9 +25,9 @@ public abstract class Pet { // abstract: 추상화
 
     protected String sound;
     public abstract void initialize();
-    protected abstract void Walk();
-    protected abstract void Eat();
-    protected abstract void Sleep();
-    protected abstract void Bark();
+    protected abstract void walk();
+    protected abstract void eat();
+    protected abstract void sleep();
+    protected abstract void bark();
 
 }

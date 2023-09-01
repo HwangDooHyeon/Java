@@ -12,9 +12,13 @@ public class Cat extends Pet {
         sound = "야옹";
     }
 
-    public void Walk() {System.out.println("우다다!!");}
-    public void Eat() {System.out.println("냥냥 맛있다");}
-    public void Sleep() {System.out.println("잠온다옹");}
-    public void Bark() {System.out.println("야옹~");}
+    public void walk() {System.out.println("우다다!!");}
+    public void eat() {System.out.println("냥냥 맛있다");}
+    public void sleep() {System.out.println("잠온다옹");}
+    public void bark() {System.out.println("야옹~");}
+
+    public void Attack() {
+
+    }
 
 }

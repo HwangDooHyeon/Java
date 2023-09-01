@@ -1,5 +1,4 @@
 public class Main {
-
     public static void main(String[] args) {
 
         ScanManager.Initialize();
@@ -14,7 +13,7 @@ public class Main {
             if(deltaTime + delayTime < System.currentTimeMillis())
             {
                 deltaTime = System.currentTimeMillis();
-                
+
                 // ** 루프
                 //Main.MainMenu();
                 int result = Main.Update();

@@ -1,12 +1,12 @@
 public class Main { // 메인은 가능한 간결하게. 함수들을 여러 개 만들어야 할 경우에는 클래스를 늘리기.
     public static void main(String[] args) {
         MainUpdate Main = new MainUpdate();
-        Main.print();
         Main.render();
-
-
-
-
+        Main.render0();
+        Main.render1();
+        Main.render2();
+        Main.render3();
+    }
 
 
 
@@ -78,5 +78,4 @@ public class Main { // 메인은 가능한 간결하게. 함수들을 여러 개
         static은 single을 정적으로, new는 Main()을 동적으로
         */
 
-    }
 }

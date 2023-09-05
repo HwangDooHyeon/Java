@@ -26,7 +26,7 @@ public class MainUpdate {
 
     public void render0() {
 
-        List<String> array = new ArrayList<String>(); // ArrayList: 끝이 정해져 있는 배열. (크기가 정해져 있음)
+        List<String> array = new ArrayList<String>(); // ArrayList: 끝이 정해져 있는 배열. (크기가 정해져 있음) / 웬만하면 Array 사용
         // 데이터와 다른 데이터가 붙어있는 형태: 데이터를 불러오는데 일정한 속도를 보장할 수 있음 / 데이터의 추가, 제거가 힘듦
 
         array.add("홍길동");
@@ -36,7 +36,7 @@ public class MainUpdate {
         System.out.println("--------------------");
         System.out.println("render0");
 
-        for (String str : array) // *forEach문의 기능
+        for (String str : array) // *'forEach문'의 기능
             System.out.println(str);
 
         for (int i = 0; i < array.size(); i++) { // List의 특정 값을 출력하고 싶을 때 사용
@@ -44,19 +44,7 @@ public class MainUpdate {
         }
     }
 
-    // 배열 출력
     public void render1() {
-        int[] a = {10, 20, 30};
-
-        System.out.println("--------------------");
-        System.out.println("render1");
-
-        for (int i = 0 ; i < a.length ; i++) {
-            System.out.println(a[i]);
-        }
-    }
-
-    public void render2 () {
         List<User> array = new ArrayList<User>();
 
         array.add(new User("홍길동", 70, 80, 90));
@@ -65,20 +53,20 @@ public class MainUpdate {
         array.add(new User("김철수", 73, 83, 93));
 
         System.out.println("--------------------");
-        System.out.println("render2");
+        System.out.println("render1");
 
         for (int i = 0; i < array.size(); i++) {
             System.out.println("----------");
-            System.out.println(array.get(i).getName() + " ");
-            System.out.println(array.get(i).getKor() + " ");
-            System.out.println(array.get(i).getEng() + " ");
-            System.out.println(array.get(i).getMath() + " ");
+            System.out.println(array.get(i).getName());
+            System.out.println(array.get(i).getKor());
+            System.out.println(array.get(i).getEng());
+            System.out.println(array.get(i).getMath());
         }
     }
 
-    public void render3 () {
-        List<User> array = new LinkedList<User>(); // LinkedList: 끝이 정해져 있지 않은 배열 (크기가 정해져 있지 않음) / 자주 사용하지 않음
-        // 데이터가 다른 데이터를 가르키는 형태: 데이터를 불러오는데 일정한 속도를 보장할 수 없음 / 데이터를 추가, 삭제하는데 용이함
+    public void render2() {
+        List<User> array = new LinkedList<User>(); // LinkedList: 끝이 정해져 있지 않은 배열 (크기가 정해져 있지 않음) / 웬만하면 사용하지 않음
+        // 데이터가 다른 데이터를 가르키는 형태: 데이터를 불러오는데 일정한 속도를 보장할 수 없음 / 데이터를 추가, 삭제하는데 용이함 / 데이터를 한 번이라도 추가, 삭제하면 Linked 사용
 
         array.add(new User("홍길동", 74, 84, 94));
         array.add(new User("임꺽정", 75, 85, 95));
@@ -86,7 +74,7 @@ public class MainUpdate {
         array.add(new User("김철수", 77, 87, 97));
 
         System.out.println("--------------------");
-        System.out.println("render3");
+        System.out.println("render2");
 
         for (User user : array) {
             System.out.println("----------");
@@ -96,4 +84,27 @@ public class MainUpdate {
             System.out.println(user.getMath());
         }
     }
+
+    // 배열 출력
+    public void renderArray() {int[] a = {10, 20, 30};
+
+        System.out.println("--------------------");
+        System.out.println("renderArray");
+
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

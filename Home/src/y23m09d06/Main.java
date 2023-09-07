@@ -1,4 +1,4 @@
-package y23m9d6;
+package y23m09d06;
 
 public class Main {
     public static void main(String[] args) {

@@ -6,40 +6,44 @@ import java.util.*;
 public class Main { // 메인은 가능한 간결하게. 함수들을 여러 개 만들어야 할 경우에는 클래스를 늘리기.
 
 
-//    public static void main(String[] args) {
-//        MainUpdate Main = new MainUpdate();
-//        Main.render();
+    public static void main(String[] args) {
+        MainUpdate Main = new MainUpdate();
+
+        for (int i = 0 ; i < 3 ; i++)
+            Main.render();
+
+
 //        Main.render0();
 //        Main.render1();
 //        Main.render2();
 //        Main.renderArray();
-//    }
-
-
-    public static void main(String[] args) {
-        List<String> list1 = new ArrayList<String>(); //ArrayList 객체 생성
-        List<String> list2 = new LinkedList<String>(); //LinkedList 객체 생성
-
-        // 시작 시간과 끝 시간을 저장할 변수 선언
-        long startTime;
-        long endTime;
-
-        // ArrayList 컬렉션에 저장하는 시간 측정
-        startTime = System.nanoTime();
-        for (int i = 0 ; i <10000 ; i++){
-            list1.add(0, String.valueOf(i));
-        }
-        endTime = System.nanoTime();
-        System.out.printf("%-17s %8d ns \n", "ArrayList 걸린 시간 : ", (endTime-startTime));
-
-        // LinkedList 컬렉션에 저장하는 시간 측정
-        startTime = System.nanoTime();
-        for(int i = 0; i<10000 ; i++){
-            list2.add(0, String.valueOf(i));
-        }
-        endTime = System.nanoTime();
-        System.out.printf("%-17s %8d ns \n", "LinkedList 걸린 시간 : ", (endTime-startTime));
     }
+
+
+//    public static void main(String[] args) {
+//        List<String> list1 = new ArrayList<String>(); //ArrayList 객체 생성
+//        List<String> list2 = new LinkedList<String>(); //LinkedList 객체 생성
+//
+//        // 시작 시간과 끝 시간을 저장할 변수 선언
+//        long startTime;
+//        long endTime;
+//
+//        // ArrayList 컬렉션에 저장하는 시간 측정
+//        startTime = System.nanoTime();
+//        for (int i = 0 ; i <10000 ; i++){
+//            list1.add(0, String.valueOf(i));
+//        }
+//        endTime = System.nanoTime();
+//        System.out.printf("%-17s %8d ns \n", "ArrayList 걸린 시간 : ", (endTime-startTime));
+//
+//        // LinkedList 컬렉션에 저장하는 시간 측정
+//        startTime = System.nanoTime();
+//        for(int i = 0; i<10000 ; i++){
+//            list2.add(0, String.valueOf(i));
+//        }
+//        endTime = System.nanoTime();
+//        System.out.printf("%-17s %8d ns \n", "LinkedList 걸린 시간 : ", (endTime-startTime));
+//    }
 
 
 // if문

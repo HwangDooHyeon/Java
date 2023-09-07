@@ -3,3 +3,17 @@ public class Singleton {
     // 계속해서 new로 메모리 할당 할 수 있으나, 메모리 재할당 할 때마다 기존 데이터는 GC로 이동한다.
     private Singleton () {} // 그래서 private으로 메모리 재할당을 막는다.
 }
+
+
+    /*
+    private static StudentManager instance = null;
+
+    public static StudentManager getInstance() {
+
+        if(instance == null)
+            instance = new StudentManager();
+
+        return instance;
+
+    }
+    */

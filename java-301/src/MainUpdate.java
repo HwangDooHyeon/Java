@@ -1,110 +1,105 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-public class MainUpdate {
+//CRUD 개념 놓고 쓸것 ,,
+//Create - Read - Update - Delete
+// 이벤트 출력, 확인 및 수행하는 곳  ex) 학생 추가 누르면 학생추가, 몇점인지 출력하는거 etc
 
-    public User creatUser(String name, int kor, int eng, int math) {
-        return new User(name, kor, eng, math);
+import java.util.List;
+import java.util.Scanner;
+public class MainUpdate { // CRUD
+    private Scanner scanner = null;
+
+    MainUpdate() {
+        scanner = new Scanner(System.in);
+    }
+
+    // ** 입력
+    private int input() {
+        int num = 0;
+        try {
+            System.out.print("입력 : ");
+            num = scanner.nextInt();
+            scanner.nextLine();
+        } catch (Exception e) {
+            System.out.println("error!!");
+        }
+
+
+        if (num < 1 || num > 5) {
+            return 0;
+        }
+
+        return num;
+    }
+
+    // ** 매뉴 출력
+    private void mainMenu() {
+        System.out.println("1. 학생 추가");
+        System.out.println("2. 학생 검색");
+        System.out.println("3. 학생 수정");
+        System.out.println("4. 학생 삭제");
+        System.out.println("5. 학생 출력");
+    }
+
+    private Student initialize() {
+        // ** 객체 생성
+        Student student = new Student();
+
+        // ** 생성된 객체의 초기화
+        // ** 이름 초기화
+        System.out.print("학생이름 입력 : ");
+        String name = scanner.nextLine();
+        student.setName(name);
+
+        // ** 국어점수 초기화
+        System.out.print("국어점수 입력 : ");
+        int korScore = scanner.nextInt();
+        student.setKorScore(korScore);
+        scanner.nextLine();
+
+        // ** 영어점수 초기화
+        System.out.print("영어점수 입력 : ");
+        int engScore = scanner.nextInt();
+        student.setEngScore(engScore);
+        scanner.nextLine();
+
+        // ** 수학점수 초기화
+        System.out.print("수학점수 입력 : ");
+        int mathScore = scanner.nextInt();
+        student.setMathScore(mathScore);
+
+        // ** 객체 반환
+        return student;
     }
 
     public void render() {
-        List<User> arrayList = new ArrayList<>();
+        mainMenu();
 
-        arrayList.add(creatUser("홍길동", 1, 2, 3));
-        arrayList.add(creatUser("임꺽정", 10, 20, 30));
-        arrayList.add(creatUser("이몽룡", 100, 200, 300));
-        arrayList.add(creatUser("김철수", 1000, 2000, 3000));
+        switch (input()) {
+            case 1:
+                Student student = initialize();
+                StudentManager.getInstance().C(student);
+                break;
 
-        for (User obj : arrayList) {
-            System.out.println("----------");
-            System.out.println(obj.getName());
-            System.out.println(obj.getKor());
-            System.out.println(obj.getEng());
-            System.out.println(obj.getMath());
+            case 3:
+                StudentManager.getInstance().U("홍길똥", "홍길동");
+                break;
+
+            default:
+                System.out.println("잘못 입력 하였습니다.");
+                break;
+        }
+
+        List<Student> student = StudentManager.getInstance().R("홍길똥");
+
+        if (student == null)
+            System.out.println("해당 학생은 존재하지 않습니다.");
+        else {
+            for (Student student1 : student) {
+                System.out.println("======= 학생 정보 =======");
+                System.out.println("학생 이름 : " + student1.getName());
+                System.out.println("국어 점수 : " + student1.getKorScore());
+                System.out.println("영어 점수 : " + student1.getEngScore());
+                System.out.println("수학 점수 : " + student1.getMathScore());
+            }
         }
     }
-
-    public void render0() {
-
-        List<String> array = new ArrayList<String>(); // ArrayList: 끝이 정해져 있는 배열. (크기가 정해져 있음) / 웬만하면 Array 사용
-        // 데이터와 다른 데이터가 붙어있는 형태: 데이터를 불러오는데 일정한 속도를 보장할 수 있음 / 데이터의 추가, 제거가 힘듦
-
-        array.add("홍길동");
-        array.add("임꺽정");
-        array.add("이몽룡");
-
-        System.out.println("--------------------");
-        System.out.println("render0");
-
-        for (String str : array) // *'forEach문'의 기능
-            System.out.println(str);
-
-        for (int i = 0; i < array.size(); i++) { // List의 특정 값을 출력하고 싶을 때 사용
-            System.out.println(array.get(i));
-        }
-    }
-
-    public void render1() {
-        List<User> array = new ArrayList<User>();
-
-        array.add(new User("홍길동", 70, 80, 90));
-        array.add(new User("임꺽정", 71, 81, 91));
-        array.add(new User("이몽룡", 72, 82, 92));
-        array.add(new User("김철수", 73, 83, 93));
-
-        System.out.println("--------------------");
-        System.out.println("render1");
-
-        for (int i = 0; i < array.size(); i++) {
-            System.out.println("----------");
-            System.out.println(array.get(i).getName());
-            System.out.println(array.get(i).getKor());
-            System.out.println(array.get(i).getEng());
-            System.out.println(array.get(i).getMath());
-        }
-    }
-
-    public void render2() {
-        List<User> array = new LinkedList<User>(); // LinkedList: 끝이 정해져 있지 않은 배열 (크기가 정해져 있지 않음) / 웬만하면 사용하지 않음
-        // 데이터가 다른 데이터를 가르키는 형태: 데이터를 불러오는데 일정한 속도를 보장할 수 없음 / 데이터를 추가, 삭제하는데 용이함 / 데이터를 한 번이라도 추가, 삭제하면 Linked 사용
-
-        array.add(new User("홍길동", 74, 84, 94));
-        array.add(new User("임꺽정", 75, 85, 95));
-        array.add(new User("이몽룡", 76, 86, 96));
-        array.add(new User("김철수", 77, 87, 97));
-
-        System.out.println("--------------------");
-        System.out.println("render2");
-
-        for (User user : array) {
-            System.out.println("----------");
-            System.out.println(user.getName());
-            System.out.println(user.getKor());
-            System.out.println(user.getEng());
-            System.out.println(user.getMath());
-        }
-    }
-
-    // 배열 출력
-    public void renderArray() {int[] a = {10, 20, 30};
-
-        System.out.println("--------------------");
-        System.out.println("renderArray");
-
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
-        }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
